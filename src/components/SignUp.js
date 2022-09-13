@@ -50,7 +50,7 @@ const SignUp = () => {
             ref={registerPassword}
             required
           />
-          <input type="submit" value="Valider inscription" />
+          <input type="submit" value="Je m'inscris" />
         </form>
       </div>
     </div>

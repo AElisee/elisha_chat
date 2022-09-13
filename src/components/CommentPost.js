@@ -60,7 +60,9 @@ const CommentPost = ({ post }) => {
           <input type="submit" value="Envoyer" />
         </form>
       ) : (
-        <p>Vous devez être connecté pour poster un commentaire</p>
+        <p className="not-connected">
+          Vous devez être connecté pour poster un commentaire
+        </p>
       )}
     </div>
   );

@@ -34,7 +34,11 @@ const Post = ({ post, user }) => {
         <div className="left-part">
           <div className="title">
             <span>{post.author[0]}</span>
-            <h2>{post.author}</h2>
+            <h2>
+              {post.author.toLowerCase() === "ange kouassi"
+                ? post.author + " (Admin)"
+                : post.author}
+            </h2>
           </div>
           <h5>Posté {dateFormater(post.date)}</h5>
         </div>
@@ -59,7 +63,13 @@ const Post = ({ post, user }) => {
           </button>
         </>
       ) : (
-        <p>{editMess ? editMess : post.message}</p>
+        <p
+          style={{
+            whiteSpace: "pre-line",
+          }}
+        >
+          {editMess ? editMess : post.message}
+        </p>
       )}
       <CommentPost post={post} />
     </div>

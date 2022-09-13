@@ -28,7 +28,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app">
       <div className="app-header">
         {user && (
           <div className="user-infos">
