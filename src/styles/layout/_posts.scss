@@ -12,6 +12,14 @@
     position: relative;
     border-left: 1px solid rgb(143, 0, 0);
 
+    // ajout *******
+    @media screen and (max-width: 768px) {
+      width: 98%;
+      margin: 0 auto;
+    }
+
+    // 
+
     .title {
       display: flex;
       align-items: center;
@@ -20,6 +28,10 @@
       h2 {
         text-transform: capitalize;
         font-size: 2rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 25px;
+        }
       }
 
       span {
@@ -38,6 +50,7 @@
 
     h5 {
       color: $grey;
+      font-size: 1.3rem;
     }
 
     .right-part {
@@ -50,7 +63,7 @@
         border-radius: 20px;
         height: 20px;
         width: 14px;
-        font-size: 0.85rem;
+        font-size: 1.1rem;
         color: $color1;
         cursor: pointer;
         transition: 0.2s;
